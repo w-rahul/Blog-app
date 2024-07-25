@@ -1,6 +1,10 @@
 import { useNavigate } from "react-router-dom";
+import { useCustomTitle } from "../hooks/hook";
 
 export const LandingPage = () => {
+
+    useCustomTitle('ECHOINK')
+
     return (
         <div className="bg-black w-screen h-screen overflow-hidden pt-6">
             <TopBar />

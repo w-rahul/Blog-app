@@ -2,8 +2,12 @@ import { useNavigate } from "react-router-dom"
 import { Auth } from "../components/Auth"
 import { Qoute } from "../components/Qoute"
 import { useEffect } from "react"
+import { useCustomTitle } from "../hooks/hook"
 
 export const Signup = () =>{
+
+    useCustomTitle("E-INK | Signup")
+
     const navigate = useNavigate()
     const Tokenvalue :string | null = localStorage.getItem("token")
     useEffect(() => {

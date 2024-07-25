@@ -56,3 +56,9 @@ export const useBlogs = () =>{
         blogs
     }
 }
+
+export const useCustomTitle = (title:string) =>{
+    useEffect(()=>{
+        document.title = title
+    },[title])
+}

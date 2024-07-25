@@ -2,12 +2,14 @@ import { useNavigate } from "react-router-dom"
 import { Appbar } from "../components/Appbar"
 import { BlogCard } from "../components/BlogCard"
 import { Skeleton } from "../components/Skeleton"
-import { useBlogs } from "../hooks/hook"
+import { useBlogs, useCustomTitle } from "../hooks/hook"
 import { useEffect } from "react"
 
 
  
  export const Blogs =()=>{
+
+    useCustomTitle('E-INK | Blogs')
 
     const Navigate = useNavigate()
     const Token = localStorage.getItem("token")

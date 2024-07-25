@@ -13,7 +13,7 @@ export interface BLOGS {
 
 export const useBlog = ({ id } : {id: string })=>{
     const [loading, setLoading] = useState(true)
-    const [blog, setBlog] = useState<BLOGS[]>([])
+    const [blog, setBlog] = useState<BLOGS | null>(null); 
 
     useEffect(()=>{
         axios.get(`${BACKEND_URL}/api/v1/blog/${id}`, {

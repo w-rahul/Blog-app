@@ -1,6 +1,6 @@
 import { Link, useNavigate, useParams} from "react-router-dom"
 import { Avatar } from "./BlogCard"
-import { BLOGS, useBlog } from "../hooks/hook"
+import { BLOGS } from "../hooks/hook"
 import axios from "axios"
 import { BACKEND_URL } from "../config"
 
@@ -17,7 +17,7 @@ export const Appbar = ({type,Blog}:AppbarProps) =>{
 
     const DeleteBlog = async ()=>{
         try {        
-            const response = await axios.delete(`${BACKEND_URL}/api/v1/blog/delete`,{
+             await axios.delete(`${BACKEND_URL}/api/v1/blog/delete`,{
                 headers:{
                     Authorization : "Bearer " + localStorage.getItem("token")
                 },

@@ -59,3 +59,6 @@ The frontend of the application is developed using React.js and Vite. It consist
 - **POST /blogs** - Create a new blog
 - **DELETE /blog/:id** - Delete a blog
 - **GET /** - Landing page
+
+## Live Link 
+rxhxul-blog-app.vercel.app

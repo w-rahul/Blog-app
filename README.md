@@ -61,4 +61,4 @@ The frontend of the application is developed using React.js and Vite. It consist
 - **GET /** - Landing page
 
 ## Live Link 
-rxhxul-blog-app.vercel.app
+https://rxhxul-blog-app.vercel.app/
